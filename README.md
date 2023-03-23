@@ -1,6 +1,6 @@
 # Core Starter Template
 
-This is a starter template for Internal Web Apps or Webafrica Ports. Built using modern architecture and is written in ASP .Net Core 5 and React using Typescript.
+This is a starter template for Internal Web Apps. Built using modern architecture and is written in ASP .Net Core 5 and React using Typescript.
 
 * [Core Starter Template](#core-starter-template)
   * [Pre-requisites](#pre-requisites)
@@ -46,13 +46,13 @@ You can get up and running with the project by following the steps below
 1) Clone the project
 
 ```powershell
-git clone https://git.webafrica.co.za/Templates/CoreStarterApp
+git clone git@github.com:AgmadKafaar/StarterTemplate.git
 ```
 
 2)  cd into the react app folder
 
 ```powershell
-cd .\CoreStarterApp\CoreStarterApp.Web\react-app\
+cd .\StarterTemplate\StarterTemplate.Web\react-app\
 ```
 
 3)  Restore all packages
@@ -79,7 +79,7 @@ Note that the development build is not optimized.
 To create a production build, use yarn build
 ```
 
-Once this is complete. You are ready to run the .Net 5 API. Open up the solution in visual studio and run TroubleshooterV2.Web project. 
+Once this is complete. You are ready to run the .Net 5 API. Open up the solution in visual studio and run StarterTemplate.Web project. 
 
 After both apps is running, http://localhost:5000 will launch and will proxy requests to the local react server running on port 3005.
 
@@ -91,12 +91,12 @@ The main tech stack is a backend API written in .Net Core 5, a frontend app buil
 
 ### Back-End using .Net Core 5
 
-The project is built using an onion architecture similar to the structure of the Livechat. Domain models, Services and API Clients are stored in TroubleshooterV2.Core. Dependency injection is used to access these services from the Web API Controllers in TroubleshooterV2.Web.
+The project is built using a simple shared architecture. Domain models, Services and API Clients are stored in StarterTemplate.Core. Dependency injection is used to access these services from the Web API Controllers in StarterTemplate.Web.
 
 #### Folder Structure
 
 ```
-📦TroubleshooterV2.Core
+StarterTemplate.Core
 
  ┣ 📂Entities (*All Domain Classes Are stored in this folder*)  
  ┣ 📂Infrastructure  
@@ -106,7 +106,7 @@ The project is built using an onion architecture similar to the structure of the
  ┣ 📂Services  
  ┃ ┣ 📂Authentication (*LDAP Authentication Service*)  
 
- 📦TroubleshooterV2.Web  
+ StarterTemplate.Web  
  ┣ 📂Controllers  
  ┣ 📂Pages  
  ┣ 📂Properties  
